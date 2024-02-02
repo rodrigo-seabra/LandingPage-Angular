@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { FormResponse } from '../components/interfaces/Form.interface';
+import { FormResponse } from '../interfaces/Form.interface';
 
 @Injectable({
   providedIn: 'root',

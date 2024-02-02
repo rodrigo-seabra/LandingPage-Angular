@@ -3,6 +3,8 @@ import { HeaderComponent } from '../header/header.component';
 import { NgOptimizedImage } from '@angular/common';
 import { ContactBtnComponent } from '../contact-btn/contact-btn.component';
 import { FormularioEmailComponent } from '../formulario-email/formulario-email.component';
+import { MatIconModule } from '@angular/material/icon';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-home', // como referenciar esse componente em outro componente
@@ -12,6 +14,8 @@ import { FormularioEmailComponent } from '../formulario-email/formulario-email.c
     NgOptimizedImage,
     ContactBtnComponent,
     FormularioEmailComponent,
+    MatIconModule,
+    FooterComponent,
   ], // as coisas que o componente vai precisar usar - componente e services do angular
   providers: [],
   templateUrl: './home.component.html', //  indica onde o html desse componente
