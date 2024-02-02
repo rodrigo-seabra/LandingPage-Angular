@@ -1,0 +1,33 @@
+<section class="form-section">
+  <!--Linkando o elemento html ao form group-->
+  <div class="text">
+    <h3>Fique por dentro das tecnologias</h3>
+    <p>
+      Em um mundo cada vez mais tecnológico, ficar por dentro das últimas
+      inovações é essencial. A rápida evolução da tecnologia não apenas
+      impulsiona a eficiência, mas também define a competitividade no mercado.
+      Estar atualizado é uma necessidade para garantir que as empresas estejam
+      preparadas para enfrentar desafios, inovar e se adaptar às mudanças
+      constantes.
+    </p>
+  </div>
+  <form action="" [formGroup]="FormularioEmailComponent">
+    <label for="name">Nome</label>
+    <input
+      type="text"
+      id="name"
+      formControlName="name"
+    /><!--Linkando o elemento html ao form control-->
+    <label for="email">Email</label>
+    <input type="text" id="email" formControlName="email" />
+    <!--Linkando o elemento html ao form control-->
+    <contact-btn
+      btn-text="se inscreva"
+      variant="secondary"
+      (submit)="onSubmit()"
+      [disabled]="!FormularioEmailComponent.valid"
+      [loading]="loading()"
+    ></contact-btn>
+    <!--loading() é uma forma de acessar o getter, e não apenas a variavel-->
+  </form>
+</section>
