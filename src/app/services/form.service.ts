@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FormResponse } from '../interfaces/Form.interface';
+import { FormularioEmailComponent } from '../components/formulario-email/formulario-email.component';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +17,7 @@ export class FormService {
       'Content-Type': 'application/json',
     }),
   };
-  enviarEmail(emailModel: any): Observable<any> {
-    return this.http.post<any>(this.apiUrl, emailModel);
+  enviarEmail(emailModel: any): Observable<FormResponse> {
+    return this.http.post<FormResponse>(this.apiUrl, emailModel);
   }
 }

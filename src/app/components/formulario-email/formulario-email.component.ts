@@ -32,20 +32,17 @@ export class FormularioEmailComponent {
 
   onSubmit() {
     const emailModel = {
-      To: 'rodrigo.seabra08@outlook.com',
+      To: this.FormularioEmailComponent.value.email,
       Subject: 'Hello from the Email API',
       Body: 'Vai se fuder',
     };
-    const jsonString = JSON.stringify(emailModel);
-    console.log(jsonString);
-
-    this.service.enviarEmail(emailModel).subscribe(
-      (service) => {
+    this.loading.set(true);
+    this.service.enviarEmail(emailModel).subscribe({
+      next: () => {
         console.log('Email enviado com sucesso:');
+        this.FormularioEmailComponent.reset();
+        this.loading.set(false);
       },
-      (error) => {
-        console.error('Erro ao enviar o e-mail:', error);
-      }
-    );
+    });
   }
 }
