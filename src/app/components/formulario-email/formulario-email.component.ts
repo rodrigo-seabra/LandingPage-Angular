@@ -6,6 +6,8 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
 import { FormService } from '../../services/form.service';
 
 @Component({
@@ -24,24 +26,26 @@ export class FormularioEmailComponent {
   constructor(private service: FormService) {
     this.FormularioEmailComponent = new FormGroup({
       name: new FormControl('', [Validators.required]),
-      email: new FormControl('', [Validators.required, Validators.email]), //validações
+      email: new FormControl('', [Validators.required, Validators.email]),
     });
   }
 
   onSubmit() {
-    this.loading.set(true);
-    if (this.FormularioEmailComponent.valid) {
-      this.service
-        .sendData(
-          this.FormularioEmailComponent.value.name,
-          this.FormularioEmailComponent.value.email
-        )
-        .subscribe({
-          next: () => {
-            this.FormularioEmailComponent.reset();
-            this.loading.set(false);
-          },
-        });
-    }
+    const emailModel = {
+      To: 'rodrigo.seabra08@outlook.com',
+      Subject: 'Hello from the Email API',
+      Body: 'Vai se fuder',
+    };
+    const jsonString = JSON.stringify(emailModel);
+    console.log(jsonString);
+
+    this.service.enviarEmail(emailModel).subscribe(
+      (service) => {
+        console.log('Email enviado com sucesso:');
+      },
+      (error) => {
+        console.error('Erro ao enviar o e-mail:', error);
+      }
+    );
   }
 }

@@ -5,6 +5,7 @@ import { ContactBtnComponent } from '../contact-btn/contact-btn.component';
 import { FormularioEmailComponent } from '../formulario-email/formulario-email.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from '../footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home', // como referenciar esse componente em outro componente
@@ -15,6 +16,7 @@ import { FooterComponent } from '../footer/footer.component';
     ContactBtnComponent,
     FormularioEmailComponent,
     MatIconModule,
+    FormsModule,
     FooterComponent,
   ], // as coisas que o componente vai precisar usar - componente e services do angular
   providers: [],
