@@ -6,6 +6,7 @@ import { FormularioEmailComponent } from '../formulario-email/formulario-email.c
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from '../footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { ScrollService } from '../../services/scroll.service';
 
 @Component({
   selector: 'app-home', // como referenciar esse componente em outro componente
@@ -23,4 +24,10 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './home.component.html', //  indica onde o html desse componente
   styleUrl: './home.component.css', // indica onde esta o css desse componente
 })
-export class HomeComponent {}
+export class HomeComponent {
+  constructor(private scrollService: ScrollService) {}
+
+  scrollToDiv(divId: string) {
+    this.scrollService.scrollToDiv(divId);
+  }
+}
