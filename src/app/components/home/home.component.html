@@ -23,7 +23,10 @@
     </p>
   </section>
   <section class="cta-section">
-    <contact-btn btn-text="Fale com nosso especialista"></contact-btn>
+    <contact-btn
+      btn-text="Fale com nosso especialista"
+      (click)="scrollToDiv('suaDiv')"
+    ></contact-btn>
   </section>
   <formulario-email></formulario-email>
   <section class="img-section">
@@ -53,7 +56,10 @@
   </section>
   <section class="end-cta-section">
     <h5>Pronto para transformar suas ideias em realidade?</h5>
-    <contact-btn btn-text="Fale com nosso especialista"></contact-btn>
+    <contact-btn
+      btn-text="Fale com nosso especialista"
+      (click)="scrollToDiv('suaDiv')"
+    ></contact-btn>
   </section>
   <app-footer></app-footer>
 </main>
