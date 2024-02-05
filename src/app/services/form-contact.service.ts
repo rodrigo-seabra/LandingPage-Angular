@@ -7,11 +7,8 @@ import { FormularioEmailComponent } from '../components/formulario-email/formula
 @Injectable({
   providedIn: 'root',
 })
-export class FormService {
-  enviarRequest(Request: { name: any; email: any; request: any }) {
-    throw new Error('Method not implemented.');
-  }
-  private apiUrl = 'https://localhost:7274/email'; // Substitua pela URL real da sua API
+export class FormContactService {
+  private apiUrl = 'https://localhost:7274/api/data'; // Substitua pela URL real da sua API
 
   constructor(private http: HttpClient) {}
 
@@ -20,7 +17,7 @@ export class FormService {
       'Content-Type': 'application/json',
     }),
   };
-  enviarEmail(emailModel: any): Observable<FormResponse> {
-    return this.http.post<FormResponse>(this.apiUrl, emailModel);
+  request(Request: any): Observable<FormResponse> {
+    return this.http.post<FormResponse>(this.apiUrl, Request);
   }
 }
