@@ -1,0 +1,42 @@
+<section class="form-section" id="suaDiv">
+  <!--Linkando o elemento html ao form group-->
+
+  <form action="" [formGroup]="formContact">
+    <div class="text">
+      <h3>Venha fazer seu orçamento!</h3>
+    </div>
+    <div class="inputs">
+      <div class="name">
+        <label for="name">Nome</label>
+        <input
+          type="text"
+          id="name"
+          formControlName="name"
+        /><!--Linkando o elemento html ao form control-->
+      </div>
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="text" id="email" formControlName="email" />
+      </div>
+    </div>
+    <div class="request">
+      <label for="request" class="textarea"
+        >Conte-nos sobre sua empresa e suas ideias, ou o problema que busca
+        solucionar.</label
+      >
+      <textarea id="request" formControlName="request"></textarea>
+    </div>
+
+    <!--Linkando o elemento html ao form control-->
+    <div class="btn">
+      <contact-btn
+        btn-text="Contatar"
+        variant="secondary"
+        [disabled]="!formContact.valid"
+        [loading]="loading()"
+        (submit)="onSubmit()"
+      ></contact-btn>
+      <!--loading() é uma forma de acessar o getter, e não apenas a variavel-->
+    </div>
+  </form>
+</section>

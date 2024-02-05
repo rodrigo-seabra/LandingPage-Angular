@@ -2,4 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #3120fe;
+  padding: 10px;
+}
+
+.app-header img {
+  cursor: pointer;
 }

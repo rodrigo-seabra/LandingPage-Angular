@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from '../footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ScrollService } from '../../services/scroll.service';
+import { FormContactComponent } from '../form-contact/form-contact.component';
 
 @Component({
   selector: 'app-home', // como referenciar esse componente em outro componente
@@ -19,6 +20,7 @@ import { ScrollService } from '../../services/scroll.service';
     MatIconModule,
     FormsModule,
     FooterComponent,
+    FormContactComponent,
   ], // as coisas que o componente vai precisar usar - componente e services do angular
   providers: [],
   templateUrl: './home.component.html', //  indica onde o html desse componente
