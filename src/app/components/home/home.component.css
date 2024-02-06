@@ -4,6 +4,11 @@ main {
   gap: 80px;
 }
 
+.main-section{
+  width: 253px;
+  height: 253px;
+}
+
 .main-section {
   display: flex;
   justify-content: center;
@@ -31,7 +36,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0px 205px;
+  padding: 0px 105px;
 }
 
 .information-data h2 {
@@ -40,10 +45,10 @@ main {
   color: #0f0f0f;
 }
 .information-top p {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 400;
   color: #0f0f0f;
-  width: 720px;
+  width: 310px;
 }
 
 b {
@@ -97,13 +102,15 @@ b {
   font-size: 30px;
   font-weight: 700;
 }
+
 .img-section img {
-  width: 510px;
+  width: 310px;
 }
 
 .text {
-  width: 510px;
+  width: 310px;
 }
+
 
 @media (min-width: 720px) {
   .main-section {
@@ -113,6 +120,31 @@ b {
     flex-direction: row;
     gap: 2rem;
     padding: 0px 205px;
+  }
+  .img-section img {
+    width: 510px;
+  }
+  .main-section{
+    width: 523px;
+    height: 523px;
+  }
+  
+  .text {
+    width: 510px;
+  }
+  .information-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 205px;
+  }
+  
+  .information-top p {
+    font-size: 26px;
+    font-weight: 400;
+    color: #0f0f0f;
+    width: 720px;
   }
   .information-top {
     display: flex;
