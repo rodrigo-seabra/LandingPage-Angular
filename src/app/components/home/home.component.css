@@ -44,6 +44,7 @@ main {
   color: #0f0f0f;
 }
 .information-top p {
+  text-align: center;
   font-size: 14px;
   font-weight: 400;
   color: #0f0f0f;
@@ -72,33 +73,34 @@ b {
   gap: 3rem;
 }
 
-.end-cta-section h5 {
-  font-size: 28px;
-  font-weight: 700;
-}
+
 
 .img-section {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .imgs p {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   color: #0f0f0f;
+  margin-bottom: 2rem;
+
 }
 
 .imgs h4 {
   margin: 15px 0;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
 }
 
 .img-section img {
-  width: 310px;
+  width: 210px;
 }
 
 .text {
@@ -121,8 +123,20 @@ b {
   border-radius: 5px;
 }
 
+
+.end-cta-section h5 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
 /*Tela de tablet*/
 @media (min-width: 768px){
+  .end-cta-section h5 {
+    font-size: 28px;
+    font-weight: 700;
+  }
   .main-section h1 {
     font-size: 46px;
     font-weight: 700;
@@ -200,6 +214,10 @@ b {
 /*tela de pc*/
 
 @media (min-width: 1024px) {
+  .end-cta-section h5 {
+    font-size: 28px;
+    font-weight: 700;
+  }
   .main-section h1 {
     font-size: 54px;
     font-weight: 700;

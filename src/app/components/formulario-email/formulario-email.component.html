@@ -12,15 +12,20 @@
     </p>
   </div>
   <form action="" [formGroup]="FormularioEmailComponent">
+    <div class="nome">
       <label for="name">Nome</label>
       <input
         type="text"
         id="name"
         formControlName="name"
       /><!--Linkando o elemento html ao form control-->
+    </div>
+    <div class="email">
       <label for="email">Email</label>
       <input type="text" id="email" formControlName="email" />
       <!--Linkando o elemento html ao form control-->
+    </div>
+
     <div class="btnStyle">
     <contact-btn
       btn-text="se inscreva"
