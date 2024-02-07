@@ -1,44 +1,46 @@
 .form-section {
-  scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #3120fe;
-  padding: 40px 70px;
+  padding: 30px 30px;
 }
 .text h3 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   color: white;
   margin-bottom: 15px;
 }
 
 .text p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: white;
 }
 
 .text {
   flex: 1;
+  text-align: center;
+  margin-bottom: 1.3rem;
 }
+
 form {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 form input {
   background: none;
   border: none;
   border-bottom: 1px solid white;
-  width: 100%;
-  height: 60px;
+  width: 244px;
+  height: 52px;
   margin-bottom: 40px;
-  padding: 15px;
+  padding: 5px;
   color: white;
 }
 
@@ -46,7 +48,7 @@ form label {
   color: white;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 1024px)  {
   .form-section {
     scroll-behavior: smooth;
     display: flex;
@@ -56,5 +58,30 @@ form label {
     gap: 115px;
     background-color: #3120fe;
     padding: 45px 230px;
+  }
+  .text {
+    flex: 1;
+
+  }
+  form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  form input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+    padding: 5px;
+    color: white;
+  }
+  
+  form label {
+    color: white;
   }
 }
