@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 import { CarouselModule } from '@coreui/angular';
-
+import { NgOptimizedImage } from '@angular/common';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-slider',
   standalone: true,
-  imports: [CarouselModule],
+  imports: [CarouselModule, NgOptimizedImage, CommonModule],
   templateUrl: './slider.component.html',
   styleUrl: './slider.component.css'
 })
