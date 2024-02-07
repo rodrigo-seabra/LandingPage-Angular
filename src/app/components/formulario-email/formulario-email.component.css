@@ -48,6 +48,51 @@ form label {
   color: white;
 }
 
+@media (min-width: 768px){
+  .form-section {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+    background-color: #3120fe;
+    padding: 25px 110px;
+    text-align: center;
+  }
+  .btnStyle{
+    width: 100%;
+    text-align: center;
+  }
+
+  .text h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+  }
+  .styleTablet{
+    display: flex;
+  }
+
+  .inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .name,
+  .email {
+    width: 285px;
+  }
+}
+
 @media (min-width: 1024px)  {
   .form-section {
     scroll-behavior: smooth;
@@ -63,6 +108,7 @@ form label {
     flex: 1;
 
   }
+
   form {
     flex: 1;
     display: flex;

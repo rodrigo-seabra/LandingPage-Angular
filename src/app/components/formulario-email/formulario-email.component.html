@@ -12,15 +12,16 @@
     </p>
   </div>
   <form action="" [formGroup]="FormularioEmailComponent">
-    <label for="name">Nome</label>
-    <input
-      type="text"
-      id="name"
-      formControlName="name"
-    /><!--Linkando o elemento html ao form control-->
-    <label for="email">Email</label>
-    <input type="text" id="email" formControlName="email" />
-    <!--Linkando o elemento html ao form control-->
+      <label for="name">Nome</label>
+      <input
+        type="text"
+        id="name"
+        formControlName="name"
+      /><!--Linkando o elemento html ao form control-->
+      <label for="email">Email</label>
+      <input type="text" id="email" formControlName="email" />
+      <!--Linkando o elemento html ao form control-->
+    <div class="btnStyle">
     <contact-btn
       btn-text="se inscreva"
       variant="secondary"
@@ -29,5 +30,7 @@
       [loading]="loading()"
     ></contact-btn>
     <!--loading() é uma forma de acessar o getter, e não apenas a variavel-->
+    </div>
+
   </form>
 </section>
