@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { NgOptimizedImage } from '@angular/common';
 import { ContactBtnComponent } from '../contact-btn/contact-btn.component';
@@ -8,7 +8,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { ScrollService } from '../../services/scroll.service';
 import { FormContactComponent } from '../form-contact/form-contact.component';
-
+import { SliderComponent } from '../slider/slider.component';
 @Component({
   selector: 'app-home', // como referenciar esse componente em outro componente
   standalone: true, //componente sozinho sem pertencer a um modulo
@@ -21,6 +21,7 @@ import { FormContactComponent } from '../form-contact/form-contact.component';
     FormsModule,
     FooterComponent,
     FormContactComponent,
+    SliderComponent,
   ], // as coisas que o componente vai precisar usar - componente e services do angular
   providers: [],
   templateUrl: './home.component.html', //  indica onde o html desse componente
