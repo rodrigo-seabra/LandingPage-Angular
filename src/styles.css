@@ -18,3 +18,14 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+html ::-webkit-scrollbar {
+  width: 10px;
+}
+html ::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background:#1400fe;
+}
+html ::-webkit-scrollbar-track {
+  background: #ffffff;
+}
