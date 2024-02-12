@@ -8,7 +8,7 @@ import { FormularioEmailComponent } from '../components/formulario-email/formula
   providedIn: 'root',
 })
 export class FormContactService {
-  private apiUrl = 'https://localhost:7274/api/data'; // Substitua pela URL real da sua API
+  private apiUrl = 'https://127.0.0.1:7274/api/data'; // Substitua pela URL real da sua API
 
   constructor(private http: HttpClient) {}
 

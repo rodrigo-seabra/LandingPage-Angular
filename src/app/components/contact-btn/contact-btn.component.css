@@ -18,7 +18,7 @@ button:disabled {
 
 .btnprimary {
   border: none;
-  border-radius:18px;
+  border-radius: 18px;
   cursor: pointer;
   padding: 7.5px 12.5px;
   background: -webkit-linear-gradient(180deg, #5041f5, #1400fe);
@@ -27,15 +27,14 @@ button:disabled {
   font-weight: 500;
 }
 
-
-@media (min-width: 1024px) {
+@media (min-width: 764px) {
   button:disabled {
     border: none;
     border-radius: 28px;
     padding: 10px 20px;
     opacity: 0.5;
   }
-  
+
   .btnsecondary {
     border: none;
     border-radius: 28px;
@@ -46,7 +45,7 @@ button:disabled {
     font-size: 20px;
     font-weight: 700;
   }
-  
+
   .btnprimary {
     border: none;
     border-radius: 28px;

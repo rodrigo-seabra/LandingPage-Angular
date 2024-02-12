@@ -11,7 +11,7 @@ export class FormService {
   enviarRequest(Request: { name: any; email: any; request: any }) {
     throw new Error('Method not implemented.');
   }
-  private apiUrl = 'https://localhost:7274/email'; // Substitua pela URL real da sua API
+  private apiUrl = 'https://192.168.7.100:7274/email'; // Substitua pela URL real da sua API
 
   constructor(private http: HttpClient) {}
 

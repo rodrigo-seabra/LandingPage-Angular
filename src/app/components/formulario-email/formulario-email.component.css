@@ -48,7 +48,7 @@ form label {
   color: white;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .form-section {
     scroll-behavior: smooth;
     display: flex;
@@ -60,7 +60,7 @@ form label {
     padding: 25px 110px;
     text-align: center;
   }
-  .btnStyle{
+  .btnStyle {
     width: 100%;
     text-align: center;
   }
@@ -71,13 +71,13 @@ form label {
     color: white;
     margin-bottom: 5px;
   }
-  
+
   .text p {
     font-size: 16px;
     font-weight: 400;
     color: white;
   }
-  .styleTablet{
+  .styleTablet {
     display: flex;
   }
 
@@ -93,7 +93,7 @@ form label {
   }
 }
 
-@media (min-width: 1024px)  {
+@media (min-width: 1024px) {
   .form-section {
     scroll-behavior: smooth;
     display: flex;
@@ -106,7 +106,6 @@ form label {
   }
   .text {
     flex: 1;
-
   }
 
   form {
@@ -126,7 +125,7 @@ form label {
     padding: 5px;
     color: white;
   }
-  
+
   form label {
     color: white;
   }

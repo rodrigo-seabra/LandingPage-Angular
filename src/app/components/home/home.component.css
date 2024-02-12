@@ -4,7 +4,6 @@ main {
   gap: 60px;
 }
 
-
 .main-section {
   display: flex;
   justify-content: center;
@@ -58,7 +57,6 @@ b {
   -webkit-text-fill-color: transparent;
 }
 
-
 .cta-section {
   display: flex;
   justify-content: center;
@@ -75,6 +73,7 @@ b {
 .end-cta-section h5 {
   font-size: 28px;
   font-weight: 700;
+  text-align: center;
 }
 
 .img-section {
@@ -105,12 +104,12 @@ b {
   width: 310px;
 }
 
-.main-section img{
+.main-section img {
   width: 223px;
   height: 223px;
 }
 
-.headline{
+.headline {
   margin-top: 1.5rem;
   text-align: center;
 }
@@ -121,8 +120,27 @@ b {
   border-radius: 5px;
 }
 
+@media (min-width: 320px) and (max-width: 425px) {
+  .img-section img {
+    width: 250px;
+  }
+  .main-section img {
+    width: 250px;
+    height: 250px;
+  }
+  .img-section {
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
 /*Tela de tablet*/
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .main-section h1 {
     font-size: 46px;
     font-weight: 700;
@@ -136,7 +154,7 @@ b {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
   .main-section {
     width: 100%;
     height: 100%;
@@ -150,11 +168,11 @@ b {
   .img-section img {
     width: 410px;
   }
-  .main-section img{
+  .main-section img {
     width: 423px;
     height: 423px;
   }
-  
+
   .text {
     width: 410px;
   }
@@ -165,7 +183,7 @@ b {
     justify-content: center;
     padding: 0px 185px;
   }
-  
+
   .information-top p {
     font-size: 20px;
     font-weight: 400;
@@ -186,7 +204,7 @@ b {
     padding-bottom: 20px;
     border-radius: 5px;
   }
-  
+
   .img-section {
     padding: 15px 200px;
     display: flex;
@@ -195,7 +213,6 @@ b {
     align-items: flex-start;
   }
 }
-
 
 /*tela de pc*/
 
@@ -213,7 +230,7 @@ b {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  
+
   .main-section {
     width: 100%;
     height: 100%;
@@ -227,11 +244,11 @@ b {
   .img-section img {
     width: 410px;
   }
-  .main-section img{
+  .main-section img {
     width: 523px;
     height: 523px;
   }
-  
+
   .text {
     width: 510px;
   }
@@ -242,7 +259,7 @@ b {
     justify-content: center;
     padding: 0px 205px;
   }
-  
+
   .information-top p {
     font-size: 26px;
     font-weight: 400;
@@ -263,7 +280,7 @@ b {
     padding-bottom: 20px;
     border-radius: 5px;
   }
-  
+
   .img-section {
     padding: 15px 210px;
     display: flex;

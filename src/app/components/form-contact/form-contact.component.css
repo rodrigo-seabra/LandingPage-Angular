@@ -29,9 +29,10 @@ form {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  text-align: center;
 }
 
-form input {
+.inputs input {
   background: none;
   border: none;
   border-bottom: 1px solid white;
@@ -40,6 +41,10 @@ form input {
   margin-bottom: 40px;
   padding: 15px;
   color: white;
+}
+
+form .inputs {
+  width: 100%;
 }
 
 textarea {
@@ -62,7 +67,7 @@ textarea {
 .inputs label {
   color: white;
 }
-@media (min-width: 768px){
+@media (min-width: 768px) {
   .form-section {
     scroll-behavior: smooth;
     display: flex;
@@ -101,9 +106,7 @@ textarea {
   }
 }
 
-
 @media (min-width: 1024px) {
-
   .form-section {
     scroll-behavior: smooth;
     display: flex;
